@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Stack Audit — Free spreadsheet template</title>
+<meta name="description" content="A free spreadsheet to track what your AI subscription stack really costs, and which tools are worth keeping.">
+<style>
+  :root {
+    --bg: #0b0d12;
+    --panel: #12151c;
+    --border: #232734;
+    --text: #e8eaef;
+    --muted: #9aa2b1;
+    --accent: #6c8bff;
+    --accent-2: #7ef0c4;
+    --cut: #ff7a7a;
+    --keep: #7ef0c4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: radial-gradient(1200px 600px at 50% -10%, #1a2036 0%, var(--bg) 60%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 96px 0 48px; text-align: center; }
+  .badge {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--accent-2);
+    background: rgba(126,240,196,0.08);
+    border: 1px solid rgba(126,240,196,0.25);
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 24px;
+    letter-spacing: 0.02em;
+  }
+  h1 {
+    font-size: 44px;
+    line-height: 1.15;
+    margin: 0 0 18px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  h1 span { color: var(--accent); }
+  .sub {
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 620px;
+    margin: 0 auto 36px;
+  }
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent);
+    color: #0b0d12;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease;
+    box-shadow: 0 8px 24px rgba(108,139,255,0.25);
+  }
+  .cta:hover { transform: translateY(-1px); box-shadow: 0 12px 28px rgba(108,139,255,0.35); }
+  .cta-note { display: block; margin-top: 12px; font-size: 13px; color: var(--muted); }
+
+  section { padding: 40px 0; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 8px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 20px;
+  }
+  .card h3 { margin: 0 0 8px; font-size: 16px; }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; }
+
+  .preview {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    margin-top: 12px;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 11px; letter-spacing: 0.04em; }
+  td.num { text-align: right; }
+  .tag { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+  .tag.cut { background: rgba(255,122,122,0.12); color: var(--cut); }
+  .tag.keep { background: rgba(126,240,196,0.12); color: var(--keep); }
+  .tag.review { background: rgba(255,255,255,0.08); color: var(--muted); }
+
+  h2 { font-size: 26px; margin: 0 0 6px; }
+  .lead { color: var(--muted); margin: 0 0 20px; }
+
+  footer {
+    padding: 60px 0 80px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 720px) {
+    h1 { font-size: 32px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+  <header class="wrap">
+    <span class="badge">Free · No sign-up · Google Sheets / Excel</span>
+    <h1>See what your <span>AI subscription stack</span> really costs you</h1>
+    <p class="sub">
+      A free spreadsheet template for solo founders and indie builders.
+      Log every AI tool you pay for, and it tells you what to keep, cut, or review — automatically.
+    </p>
+    <a class="cta" href="./ai-stack-audit-en.xlsx" download>
+      ⬇ Download the template (.xlsx)
+    </a>
+    <span class="cta-note">Works in Excel, Google Sheets, and Numbers. No account needed.</span>
+  </header>
+
+  <section class="wrap">
+    <div class="grid">
+      <div class="card">
+        <h3>📋 One row per tool</h3>
+        <p>Cost, category, how often you use it, and how much it's actually worth to you.</p>
+      </div>
+      <div class="card">
+        <h3>⚙️ Auto-scored</h3>
+        <p>Built-in formulas turn usage and value into a clear "Keep / Review / Cut" verdict.</p>
+      </div>
+      <div class="card">
+        <h3>📊 Instant summary</h3>
+        <p>Monthly and annual totals, cut candidates, and a spend-by-category chart — no setup.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>What it looks like</h2>
+    <p class="lead">A sample row from the template — this is exactly what you'll see once you fill in your own stack.</p>
+    <div class="preview">
+      <table>
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>Category</th>
+            <th class="num">Monthly cost</th>
+            <th>Usage</th>
+            <th>Value</th>
+            <th>Decision</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Coldtea.ai</td>
+            <td>Coding/Dev</td>
+            <td class="num">$49.00</td>
+            <td>4 / 5</td>
+            <td>4 / 5</td>
+            <td><span class="tag keep">Keep</span></td>
+          </tr>
+          <tr>
+            <td>Random AI Notetaker</td>
+            <td>Assistant/Productivity</td>
+            <td class="num">$20.00</td>
+            <td>1 / 5</td>
+            <td>2 / 5</td>
+            <td><span class="tag cut">Cut</span></td>
+          </tr>
+          <tr>
+            <td>Some Marketing Tool</td>
+            <td>Marketing/Ads</td>
+            <td class="num">$35.00</td>
+            <td>3 / 5</td>
+            <td>3 / 5</td>
+            <td><span class="tag review">Review</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Why this exists</h2>
+    <p class="lead" style="max-width:640px;">
+      Most solo founders end up with 5-10 AI subscriptions and no single view of what it's costing them —
+      or which tools are actually earning their keep. This template gives you that view in under 10 minutes,
+      no tracking software required.
+    </p>
+  </section>
+
+  <footer class="wrap">
+    Built by an indie builder validating this idea in public.
+    <br>
+    <a href="./ai-stack-audit-en.xlsx" download>Download the free template →</a>
+  </footer>
+
+</body>
+</html>
