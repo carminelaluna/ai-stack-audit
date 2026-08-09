@@ -2,7 +2,7 @@
 
 A free spreadsheet template that shows you what your AI subscription stack really costs you each month — and which tools are actually worth keeping.
 
-🔗 **Live page:** _add your GitHub Pages URL here after deploying_
+🔗 **Live page:** _https://carminelaluna.github.io/ai-stack-audit/_
 ⬇️ **Direct download:** [ai-stack-audit-en.xlsx](./ai-stack-audit-en.xlsx)
 
 ## Why
